@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>entry</key>
+	<dict>
+		<key>bundle</key>
+		<string>AppList</string>
+		<key>cell</key>
+		<string>PSLinkCell</string>
+		<key>icon</key>
+		<string>/Library/PreferenceLoader/Preferences/FPSTweak.png</string>
+		<key>isController</key>
+		<string>1</string>
+		<key>label</key>
+		<string>FPSTweak</string>
+		<key>ALSettingsPath</key>
+		<string>/var/mobile/Library/Preferences/com.alas.fpstweak.plist</string>
+		<key>ALSettingsKeyPrefix</key>
+		<string>FPSTweakEnabled-</string>
+		<key>ALChangeNotification</key>
+		<string>com.alas.fpstweak.settingschanged</string>
+		<key>ALSettingsDefaultValue</key>
+		<string>0</string>
+		<key>ALSectionDescriptors</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>User Applications</string>
+				<key>predicate</key>
+				<string>(isSystemApplication = FALSE)</string>
+				<key>cell-class-name</key>
+				<string>ALSwitchCell</string>
+				<key>icon-size</key>
+				<string>29</string>
+				<key>suppress-hidden-apps</key>
+				<string>1</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>System Applications</string>
+				<key>predicate</key>
+				<string>(isSystemApplication = TRUE)</string>
+				<key>cell-class-name</key>
+				<string>ALSwitchCell</string>
+				<key>icon-size</key>
+				<string>29</string>
+				<key>suppress-hidden-apps</key>
+				<string>1</string>
+				<key>footer-title</key>
+				<string>© alas create for demo</string>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>
